@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: New project inquiry
+    url: https://novrascale.com/contact
+    about: Interested in having NovraScale build a site or lead system? Start here.
+  - name: Security disclosure
+    url: https://github.com/NovraScale/.github/blob/main/SECURITY.md
+    about: Reporting a vulnerability? Use the private channel described in our security policy — do not open a public issue.

@@ -1,0 +1,35 @@
+name: Feature / change request
+description: Propose new functionality or a change to existing behavior.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: scope
+    attributes:
+      label: Which repo / product / client
+      placeholder: e.g. products/audit-engine, clients/<slug>
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What's the user or business pain? Not the solution — the pain.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Sketch the shape of the solution. Alternatives you considered are welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: How we'll know it worked
+      description: A measurable outcome, a screenshot of the desired end-state, or a user-visible behavior we can test.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else

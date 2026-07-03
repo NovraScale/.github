@@ -1,0 +1,51 @@
+name: Bug report
+description: Something is broken in an NS-owned repo, product, or client site.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing. If this is a **security** issue, stop and follow [SECURITY.md](https://github.com/NovraScale/.github/blob/main/SECURITY.md) instead — do not report it here.
+  - type: input
+    id: scope
+    attributes:
+      label: Where
+      description: Which repo, product, client site, or URL is affected?
+      placeholder: e.g. products/novrascale-site, clients/maxx-city-realty, novrascale.com/services
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did you see? Include exact error messages, screenshots, or console output.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How to reproduce
+      description: Step-by-step. Include the browser / device / OS when relevant.
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: e.g. Chrome 141 / macOS 14 / iPhone 15
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Links, related issues, workarounds you've tried.
