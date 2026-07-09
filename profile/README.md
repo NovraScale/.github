@@ -11,7 +11,7 @@ We build websites and lead systems for US small-to-mid businesses — trades, he
 - **Custom sites** engineered for speed, SEO, and conversion — not templates.
 - **Lead systems** — capture, nurture, and route inbound so nothing falls through.
 - **Reporting** — every client sees what their money is doing.
-- **ROI guarantee** — positive ROI in 6 months, custom-scoped per client.
+- **The Anvil Promise** — ships on time, ships working, ships yours, or we make it right on our clock.
 
 Learn more → [novrascale.com](https://novrascale.com)
 
