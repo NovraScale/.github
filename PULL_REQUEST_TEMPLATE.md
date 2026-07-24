@@ -32,7 +32,7 @@ Delete sections that don't apply — brevity > completeness.
 
 ## Deployment notes
 
-<!-- Any env vars, secrets, DNS, or third-party dashboard changes required alongside this merge? Cache purges? Wrangler secrets? -->
+<!-- Any env vars, secrets, DNS, cache, or third-party dashboard changes required alongside this merge? -->
 
 ## Follow-ups
 

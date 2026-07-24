@@ -28,8 +28,7 @@ Almost everything (client sites, our own products, internal tooling) lives in **
 
 | Repo | What it is |
 |---|---|
-| [`.github`](https://github.com/NovraScale/.github) | Org-level defaults: this profile, issue/PR templates, the security policy, and org-wide engineering docs. |
-| [`ci`](https://github.com/NovraScale/ci) | The shared CI/CD standard: reusable GitHub Actions workflows every NS repo inherits. |
+| [`.github`](https://github.com/NovraScale/.github) | Org-level defaults: this profile, issue/PR templates, and the security policy. |
 
 If you're a client or partner who needs access to a specific repo, contact your NovraScale point of contact.
 

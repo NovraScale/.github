@@ -33,7 +33,7 @@ Please include:
 
 **Out of scope**
 
-- Third-party services we integrate with (report those upstream — e.g., Cloudflare, Vercel, Resend, Supabase).
+- Third-party services we integrate with (report those to the respective vendor).
 - Client-controlled content (CMS text, uploaded media) on client sites.
 - Findings that require physical access, social engineering of NovraScale staff, or already-disclosed CVEs on managed infrastructure.
 - Best-practice suggestions with no demonstrated impact (missing headers on non-sensitive endpoints, verbose banners, etc.) — welcome as regular feedback, not security reports.
@@ -49,12 +49,6 @@ We will not pursue or support legal action against researchers who:
 
 ## Our automated posture
 
-Reporting is the human channel. In parallel, every repo in the org runs GitHub-native supply-chain security, enabled org-wide (not per repo):
-
-- **Dependabot alerts** and the **dependency graph** flag known-vulnerable dependencies.
-- **Dependabot security updates** open PRs that bump a flagged dependency to its patched version. Dependency PRs are reviewed and merged by a human; nothing auto-merges.
-- Where enabled, **secret scanning + push protection** block committed credentials at push time.
-
-These run on all repos, public and private, via a default organization security configuration.
+Reporting is the human channel. In parallel, we run GitHub-native supply-chain security (Dependabot alerts, dependency updates, and secret-scanning push protection) across our repositories, so known-vulnerable dependencies and committed credentials are caught automatically.
 
 Thanks for helping keep NovraScale and our clients safe.
