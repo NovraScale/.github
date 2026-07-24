@@ -8,12 +8,13 @@ NS uses Claude Code as the primary AI coding assistant. This doc covers conventi
 - **Sub-project `CLAUDE.md`** (per product / per client) — authoritative for that project's build commands, architecture, and conventions. Read before touching code inside that directory.
 - **`AGENTS.md`** — used by some products (e.g. `novrascale-site`) to point AI assistants at framework-specific docs bundled in `node_modules`. Heed those pointers; don't answer from training-data memory about newer framework versions.
 
-Rule: the most-specific `CLAUDE.md` wins. Don't duplicate content between root and sub-project files — link instead.
+Rule: the most-specific `CLAUDE.md` wins. Don't duplicate content between root and sub-project files. Link instead.
 
-## Committed vs user-level Claude assets
+## Where Claude assets live
 
-- **`.claude/` in a repo** — NS-owned agents, skills, and settings. Committed. Ships with the repo.
-- **`~/.claude/`** — third-party agents (e.g. `awesome-claude-code-subagents`) and first-party skills. Not committed. Some NS workflows depend on specific ones being installed — each repo's `.claude/REQUIRED.md` lists the manifest and a fresh-clone setup checklist.
+- **`.claude/` in a repo** — NS-owned agents (`ns-*`), skills, and settings. Committed. Ships with the repo.
+- **`.claude/agents/library`** — the broader agent collection, vendored **in-repo as a git submodule** pointing at [`NovraScale/agents`](https://github.com/NovraScale/agents), NS's own fork of the `awesome-claude-code-subagents` collection. Its ~140 agents load straight from the clone. **Do not re-clone upstream into `~/.claude/agents/`** — some agents in the fork are tuned for NS (e.g. `hormozi` is rebuilt around NS's offer stack), and an upstream copy at user level would shadow the tuned versions with generic ones. A `git clone --recurse-submodules` is required to get the library; a plain clone leaves it empty and every library agent missing.
+- **User level (`~/.claude/`)** — first-party skills and MCP servers (e.g. Cloudflare's). Not committed. Each repo's `.claude/REQUIRED.md` lists the full manifest and a fresh-clone setup checklist.
 
 ## Attribution
 

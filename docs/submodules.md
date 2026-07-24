@@ -4,6 +4,13 @@ The `NovraScale/NovraScale` monorepo is an umbrella. Every product under `produc
 
 This layout keeps client history and access isolated (a client repo can be shared without exposing the rest of the org) while giving one working directory to operate from.
 
+Two **infrastructure** submodules sit outside `products/` and `clients/` and are easy to forget:
+
+- `.github` → [`NovraScale/.github`](https://github.com/NovraScale/.github), the org defaults (this repo).
+- `.claude/agents/library` → [`NovraScale/agents`](https://github.com/NovraScale/agents), the tuned agent-library fork.
+
+Both are why a fresh clone **must** use `--recurse-submodules` (below); a plain clone leaves them empty and every library agent and org default missing.
+
 ## Working inside a submodule
 
 `cd` into the submodule first. Commits and pushes are made from inside the submodule, against its own remote.

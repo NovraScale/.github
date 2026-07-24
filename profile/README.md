@@ -1,29 +1,35 @@
 # NovraScale
 
-**The Lead Engine for Booked-Out Businesses.**
+**A done-for-you customer-acquisition system for US small and mid-sized businesses.**
 
-We build websites and lead systems for US small-to-mid businesses — trades, healthcare, legal, auto, finance, real estate, and other service verticals — so they stop leaving revenue on the table and start running with a full pipeline.
+We build the whole machine: the website, the SEO, the lead capture, the automated follow-up, the review engine, and the CRM pipeline. An owner's schedule fills itself without them lifting a finger. We serve trades, healthcare, legal, auto, finance, real estate, and other service verticals, **nationwide**.
+
+We're not a web design agency, and we don't sell websites. We sell a 24/7 system that books more customers. The website is where it runs, not the product.
 
 ---
 
-## What we do
+## How it works
 
-- **Custom sites** engineered for speed, SEO, and conversion — not templates.
-- **Lead systems** — capture, nurture, and route inbound so nothing falls through.
-- **Reporting** — every client sees what their money is doing.
-- **The Anvil Promise** — ships on time, ships working, ships yours, or we make it right on our clock.
+Three layers, one engagement:
 
-Learn more → [novrascale.com](https://novrascale.com)
+- **The Forge Method.** How we build it. Every site is hand-coded for speed, SEO, and conversion. No templates, no page-builders.
+- **The Anvil Promise.** What we stake on it. A four-layer guarantee: **Build-Right** (60-day defect warranty), **Ship-Date** (ships on its committed date or you get a credit), **Ownership** (yours from Day 1), **No-Lock-In** (month-to-month).
+- **NovraScale One.** What it runs on. The always-on platform every build deploys onto: hosting, the AI workflow layer, lead capture and routing, sub-minute follow-up, the review engine, the CRM pipeline, and a client console that shows exactly what the system is doing.
+
+Done-for-you, not DIY. We don't teach you marketing. We run it for you.
+
+Learn more at [novrascale.com](https://novrascale.com).
 
 ---
 
 ## Where our code lives
 
-Most of what powers NovraScale — client sites, internal tools, and the products below — lives in **private repos** in this org. The public surface is intentionally small.
+Almost everything (client sites, our own products, internal tooling) lives in **private repos** in this org. The public surface is intentionally small.
 
 | Repo | What it is |
 |---|---|
-| [`.github`](https://github.com/NovraScale/.github) | Org-level defaults: profile, issue/PR templates, security policy, contribution and engineering docs. |
+| [`.github`](https://github.com/NovraScale/.github) | Org-level defaults: this profile, issue/PR templates, the security policy, and org-wide engineering docs. |
+| [`ci`](https://github.com/NovraScale/ci) | The shared CI/CD standard: reusable GitHub Actions workflows every NS repo inherits. |
 
 If you're a client or partner who needs access to a specific repo, contact your NovraScale point of contact.
 

@@ -13,6 +13,8 @@ The split exists because ESLint cold-start + `tsc` on Next.js + React 19 sub-pro
 
 The full drop-in (single-package repos and multi-sub-project monorepos) lives at [`templates/client-site-snippets/precommit-hooks.md`](https://github.com/NovraScale/NovraScale/blob/main/templates/client-site-snippets/precommit-hooks.md) in the monorepo. If you open a repo and find no `.husky/` and no `husky` devDep, install it before doing other work.
 
+The hooks are the local half. The same `lint` + `typecheck` (plus `format:check`, `build`, tests, and a gated deploy) run again in CI on every push and PR, via the shared standard. See [ci-cd.md](./ci-cd.md). Local and CI enforce the same bar, so a green pre-push should mean a green pipeline.
+
 ## `--no-verify` policy
 
 Don't. Not on `git commit`, not on `git push`. If a hook fails, fix the underlying issue — the hook is telling you something. The only justification is a hook that is itself broken (typo in the script, dependency conflict), and even then the fix is to unbreak the hook in the same session.
@@ -32,13 +34,15 @@ Never mix changes to two submodules in one commit — it makes rollback ambiguou
 - Body wraps at ~72 chars, explains **why** — the diff already shows what.
 - No `Co-Authored-By: Claude` (or any bot) trailer. NS commits are attributed to their human author.
 
-## PRs
+## Branches and PRs
 
-Use the org-default PR template (`.github/PULL_REQUEST_TEMPLATE.md`) unless a repo overrides it. The verification section is not decorative — actually exercise the change end-to-end and confirm before checking the box.
+NS works **on `main`, directly**, in every repo. No feature branches, no human-opened PRs, no squash-merges. Keep history linear. This supersedes any per-repo `CONTRIBUTING`/`CLAUDE` policy that says otherwise.
+
+PRs exist for exactly one thing: **Dependabot dependency updates**. Those are reviewed and merged by a human (rebase-merge, to keep history linear), never auto-merged. When a PR is in play, the org-default template (`.github/PULL_REQUEST_TEMPLATE.md`) applies; its verification section is not decorative, so actually exercise the change before checking the box.
 
 ## Secrets
 
-- Never commit `.env*` files (they're gitignored — keep them that way).
-- NS-level secrets live at `/home/neo/NovraScale/.env.local` (gitignored, not shell-sourced by default).
-- Rotate a Worker secret with `npx wrangler secret put <NAME>` **and** update the `.env.local` mirror in the same session.
+- Never commit `.env*` files (they're gitignored; keep them that way).
+- NS-level secrets live in `.env.local` at the monorepo root. The absolute path is machine-dependent (`/Users/neo/NovraScale/.env.local` on macOS, `/home/neo/NovraScale/.env.local` on Ubuntu), so reference it relative to the repo root and probe rather than hardcoding. The file is gitignored and is not shell-sourced by default; load it inline in a subshell when a script needs the keys.
+- Rotate a Worker secret with `npx wrangler secret put <NAME>` **and** update the `.env.local` mirror in the same session. Worker secrets are write-only, so the mirror is the only readable copy.
 - When you add a new NS-level key, update the credentials table in the root `CLAUDE.md` in the same commit that introduces the consumer of that key.

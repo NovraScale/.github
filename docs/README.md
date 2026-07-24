@@ -6,9 +6,10 @@ Org-wide conventions and playbooks that apply across every NS repo. Per-repo `CL
 
 | Doc | What it covers |
 |---|---|
-| [engineering-conventions.md](./engineering-conventions.md) | Git hooks, commit scope, submodule discipline, `--no-verify` policy. The minimum bar for any NS repo. |
-| [submodules.md](./submodules.md) | How the NovraScale monorepo tracks products and client repos as submodules — bumping, cloning fresh, common footguns. |
-| [ai-assistants.md](./ai-assistants.md) | How NS uses Claude Code and other AI coding assistants — where CLAUDE.md lives, agents/skills conventions, secret handling. |
+| [engineering-conventions.md](./engineering-conventions.md) | Git hooks, branch/PR policy, commit scope, `--no-verify` policy, secrets. The minimum bar for any NS repo. |
+| [ci-cd.md](./ci-cd.md) | The shared `NovraScale/ci` CI/CD standard: tiers, thin callers, the script contract, deploy gating, and the deploy-token gotcha. |
+| [submodules.md](./submodules.md) | How the NovraScale monorepo tracks products and client repos as submodules: bumping, cloning fresh, common footguns. |
+| [ai-assistants.md](./ai-assistants.md) | How NS uses Claude Code: where CLAUDE.md lives, the vendored agent library, skills conventions, secret handling. |
 
 ## When to add a doc here
 
