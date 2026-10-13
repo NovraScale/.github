@@ -1,45 +1,38 @@
-# NovraScale
+# Brevard Booked
 
-**A done-for-you customer-acquisition system for US small and mid-sized businesses.**
+**Websites, lead funnels, ads and SEO for owner-operated home-services businesses in Brevard County, FL.**
 
-We build the whole machine: the website, the SEO, the lead capture, the automated follow-up, the review engine, and the CRM pipeline. An owner's schedule fills itself without them lifting a finger. We serve trades, healthcare, legal, auto, finance, real estate, and other service verticals, **nationwide**.
+One package runs the path from the first click to the next job: the website, Facebook, Instagram and
+Google ads, local SEO, and automated replies and follow-up. Every request gets an automated reply in
+seconds and the owner gets an alert. The owner keeps the domain, the ad accounts and every lead from
+day one.
 
-We're not a web design agency, and we don't sell websites. We sell a 24/7 system that books more customers. The website is where it runs, not the product.
+Start with the free system map at [brevardbooked.com](https://brevardbooked.com/system-map). It takes
+about three minutes and shows where leads slip away.
 
----
-
-## How it works
-
-Three layers, one engagement:
-
-- **The Forge Method.** How we build it. Every site is hand-coded for speed, SEO, and conversion. No templates, no page-builders.
-- **The Anvil Promise.** What we stake on it. A four-layer guarantee: **Build-Right** (60-day defect warranty), **Ship-Date** (ships on its committed date or you get a credit), **Ownership** (yours from Day 1), **No-Lock-In** (month-to-month).
-- **NovraScale One.** What it runs on. The always-on platform every build deploys onto: hosting, the AI workflow layer, lead capture and routing, sub-minute follow-up, the review engine, the CRM pipeline, and a client console that shows exactly what the system is doing.
-
-Done-for-you, not DIY. We don't teach you marketing. We run it for you.
-
-Learn more at [novrascale.com](https://novrascale.com).
+Brevard Booked is a d/b/a of NovraScale LLC, which is why this organization carries that name.
 
 ---
 
 ## Where our code lives
 
-Almost everything (client sites, our own products, internal tooling) lives in **private repos** in this org. The public surface is intentionally small.
+Client sites, our own products and internal tooling live in **private repos** in this organization.
+The public surface is intentionally small.
 
 | Repo | What it is |
 |---|---|
-| [`.github`](https://github.com/NovraScale/.github) | Org-level defaults: this profile, issue/PR templates, and the security policy. |
+| [`.github`](https://github.com/NovraScale/.github) | Organization defaults: this profile, issue and PR templates, and the security policy. |
 
-If you're a client or partner who needs access to a specific repo, contact your NovraScale point of contact.
+If you're a client or partner who needs access to a specific repo, ask your Brevard Booked contact.
 
 ---
 
-## Working with us
+## Contact
 
-- **New project inquiries:** [novrascale.com/contact](https://novrascale.com/contact)
+- **Project inquiries:** [brevardbooked.com/contact](https://brevardbooked.com/contact)
 - **Security disclosures:** see [SECURITY.md](https://github.com/NovraScale/.github/blob/main/SECURITY.md)
-- **General:** matt@novrascale.com
+- **General:** hello@brevardbooked.com
 
 ---
 
-<sub>NovraScale · United States · Est. 2026</sub>
+<sub>NovraScale LLC d/b/a Brevard Booked · Melbourne, FL</sub>
