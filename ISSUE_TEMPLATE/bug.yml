@@ -12,7 +12,7 @@ body:
     attributes:
       label: Where
       description: Which repo, product, client site, or URL is affected?
-      placeholder: e.g. products/novrascale-site, clients/maxx-city-realty, novrascale.com/services
+      placeholder: e.g. products/brevard-booked/site, clients/maxx-city-realty, brevardbooked.com/package
     validations:
       required: true
   - type: textarea

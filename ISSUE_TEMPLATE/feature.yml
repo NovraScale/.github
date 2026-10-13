@@ -7,7 +7,7 @@ body:
     id: scope
     attributes:
       label: Which repo / product / client
-      placeholder: e.g. products/audit-engine, clients/<slug>
+      placeholder: e.g. products/novrascale-dashboard, clients/<slug>
     validations:
       required: true
   - type: textarea
