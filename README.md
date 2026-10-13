@@ -23,4 +23,4 @@ Any repo that ships its own `.github/PULL_REQUEST_TEMPLATE.md`, `.github/ISSUE_T
 
 ## Contributing
 
-Everything here is org-wide, public surface area. Clear changes with matt@novrascale.com before merging.
+Everything here is org-wide, public surface area. Clear changes with hello@brevardbooked.com before merging.
